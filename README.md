@@ -51,3 +51,22 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
+
+# Routes 
+
+```
+/
+
+/auth/login
+/auth/logout
+
+/products
+/products?page=1
+/products?sort=ascending
+/products?search=query
+/products/category
+/products/$productId
+
+/cart
+/favorites
+```

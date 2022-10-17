@@ -16,7 +16,19 @@ export const meta: MetaFunction = () => ({
 });
 
 export function links() {
-  return [{ rel: "stylesheet", href: tailwindCss }];
+  return [
+    { rel: "preconnect", href: "https://fonts.googleapis.com" },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      meta: { crossorigin: true },
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap",
+    },
+    { rel: "stylesheet", href: tailwindCss },
+  ];
 }
 
 export default function App() {

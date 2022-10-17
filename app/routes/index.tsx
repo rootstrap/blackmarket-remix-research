@@ -1,8 +1,8 @@
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <div>
       <h1 className="text-3xl font-bold text-red-500 underline">
-        Welcome to Remix
+        Theme setup sandbox
       </h1>
       <ul>
         <li>

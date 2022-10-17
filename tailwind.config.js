@@ -9,12 +9,17 @@ module.exports = {
     fontFamily: {
       sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
     },
+    fontSize: {
+      sm: ["0.875rem", "1.25rem"],
+      ...defaultTheme.fontSize,
+      "3xl": '1.75rem'
+    },
     extend: {
       colors: {
         white: "#FFFFFF",
         black: "#00031A",
         gray: {
-          50: "#f6f6f6",
+          50: "#f4f7f4",
           100: "#ececec",
           200: "#e0e0e0",
           300: "#d8d8d8",

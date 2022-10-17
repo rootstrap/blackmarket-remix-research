@@ -10,7 +10,6 @@ module.exports = {
       sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
-      sm: ["0.875rem", "1.25rem"],
       ...defaultTheme.fontSize,
       "3xl": '1.75rem'
     },

@@ -44,21 +44,21 @@ export default function Index() {
       <hr />
       <div className="grid grid-cols-4 my-8 md:grid-cols-12">
         <div className="flex col-start-1 col-end-13 row-span-1">
-          <div className="w-[100px] h-[100px] m-4 bg-black rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-white rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-gray-700 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-gray-500 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-gray-200 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-gray-50 rounded-lg border border-spacing-1 border-dashed border-gray-500"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-black"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-white"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-gray-700"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-gray-500"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-gray-200"></div>
+          <div className="m-4 h-[100px] w-[100px] border-spacing-1 rounded-lg border border-dashed border-gray-500 bg-gray-50"></div>
         </div>
         <div className="flex col-start-1 col-end-13 row-span-2">
-          <div className="w-[100px] h-[100px] m-4 bg-blue-400 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-green-500 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-blue-700 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-blue-50 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-red-500 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-blue-500 rounded-lg"></div>
-          <div className="w-[100px] h-[100px] m-4 bg-blue-900 rounded-lg"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-blue-400"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-green-500"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-blue-700"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-blue-50"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-red-500"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-blue-500"></div>
+          <div className="m-4 h-[100px] w-[100px] rounded-lg bg-blue-900"></div>
         </div>
       </div>
     </div>

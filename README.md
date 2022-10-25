@@ -52,20 +52,19 @@ rm -rf app
 cp -R ../my-old-remix-app/app app
 ```
 
-# Routes 
+# Routes
 
 ```
 /
 
 /auth/login
-/auth/logout
+/auth/register
 
 /products
 /products?page=1
 /products?sort=ascending
 /products?search=query
 /products/category
-/products/$productId
 
 /cart
 /favorites

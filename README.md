@@ -55,17 +55,19 @@ cp -R ../my-old-remix-app/app app
 # Routes
 
 ```
-/
+app
+├── root.jsx
+└── routes
+    ├── auth
+    │   ├── login.tsx
+    │   └── register.tsx
+    ├── products
+    │   ├── index.tsx
+    │   └── category.tsx
+    ├── auth.tsx
+    ├── cart.tsx
+    ├── favorites.tsx
+    ├── products.tsx
+    ├── index.tsx
 
-/auth/login
-/auth/register
-
-/products
-/products?page=1
-/products?sort=ascending
-/products?search=query
-/products/category
-
-/cart
-/favorites
 ```

@@ -52,21 +52,22 @@ rm -rf app
 cp -R ../my-old-remix-app/app app
 ```
 
-# Routes 
+# Routes
 
 ```
-/
+app
+├── root.jsx
+└── routes
+    ├── auth
+    │   ├── login.tsx
+    │   └── register.tsx
+    ├── products
+    │   ├── index.tsx
+    │   └── category.tsx
+    ├── auth.tsx
+    ├── cart.tsx
+    ├── favorites.tsx
+    ├── products.tsx
+    ├── index.tsx
 
-/auth/login
-/auth/logout
-
-/products
-/products?page=1
-/products?sort=ascending
-/products?search=query
-/products/category
-/products/$productId
-
-/cart
-/favorites
 ```

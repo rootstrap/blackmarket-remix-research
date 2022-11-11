@@ -27,7 +27,7 @@ const RegisterRoute = () => {
 						By signing up, you accept the{' '}
 						<a href={Routes.HOME} className='text-link'>
 							Data Policy
-						</a>
+						</a>{' '}
 						and the{' '}
 						<a href={Routes.HOME} className='text-link'>
 							Cookies Policy.

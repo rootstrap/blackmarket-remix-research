@@ -1,14 +1,11 @@
 import { Outlet } from '@remix-run/react';
-
-/* TODO: Implement Auth Layout */
+import { AuthLayout } from '~/layouts';
 
 const Auth = () => {
 	return (
-		<div>
-			<div className='form__container'>
-				<Outlet />
-			</div>
-		</div>
+		<AuthLayout>
+			<Outlet />
+		</AuthLayout>
 	);
 };
 

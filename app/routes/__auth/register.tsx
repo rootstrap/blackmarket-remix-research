@@ -1,5 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
-import { InputField } from '~/common';
+import { Button, InputField } from '~/common';
 import { Routes } from '~/types';
 import logo from '../../images/Logo.png';
 
@@ -20,7 +20,7 @@ const RegisterRoute = () => {
 				<InputField label='Full Name' placeholder='Type your email' type='email' />
 				<InputField label='Email' placeholder='Type your email' type='text' />
 				<InputField label='Password' placeholder='Type your password' type='password' />
-				<button className='mt-3 w-full rounded-lg bg-black p-3 text-white'>Sign up</button>
+				<Button label='Sign up' variant='primary' fullWidth onClick={() => console.log('Signup')} />
 
 				<div className='mt-4 text-center'>
 					<p>

@@ -857,7 +857,7 @@ video {
   color: rgb(0 3 26 / var(--tw-text-opacity));
 }
 
-.text-link {
+.text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(7 108 224 / var(--tw-text-opacity));
 }

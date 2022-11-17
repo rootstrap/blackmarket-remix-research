@@ -25,18 +25,18 @@ const RegisterRoute = () => {
 				<div className='mt-4 text-center'>
 					<p>
 						By signing up, you accept the{' '}
-						<a href={Routes.HOME} className='text-link'>
+						<a href={Routes.HOME} className='text-blue-500'>
 							Data Policy
 						</a>{' '}
 						and the{' '}
-						<a href={Routes.HOME} className='text-link'>
+						<a href={Routes.HOME} className='text-blue-500'>
 							Cookies Policy.
 						</a>
 					</p>
 
 					<p className='mt-4'>
 						Already have an account?{' '}
-						<a href={Routes.SIGNIN} className='text-link'>
+						<a href={Routes.SIGNIN} className='text-blue-500'>
 							{' '}
 							Log in
 						</a>

@@ -23,7 +23,7 @@ const LoginRoute = () => {
 					<button className='mt-3 w-full rounded-lg bg-black p-3 text-white'>Log in</button>
 
 					{/* TODO: Define what to do with this button */}
-					<a href={Routes.HOME} className='mt-8 block text-center text-link'>
+					<a href={Routes.HOME} className='mt-8 block text-center text-blue-500'>
 						I forgot my password
 					</a>
 				</form>

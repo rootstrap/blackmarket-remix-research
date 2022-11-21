@@ -1,5 +1,6 @@
 import { useNavigate } from '@remix-run/react';
 import type { MetaFunction } from '@remix-run/node';
+
 import { InputField, Button } from '~/common';
 import { Routes } from '~/types';
 import logo from '../../images/Logo.png';

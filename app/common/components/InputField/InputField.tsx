@@ -1,34 +1,54 @@
+import { useState } from 'react';
+import cn from 'classnames';
+
 import crossError from '../../../icons/Exclude.svg';
+import visibilityOff from '../../../icons/visibility_off.svg';
+import visibilityOn from '../../../icons/visibility_on.svg';
 
 export const InputField = ({
 	label = '',
 	placeholder = '',
 	isRequired = false,
 	disabled = false,
-	error = '',
 	type = 'text',
+	error = '',
 }: InputFieldProps) => {
+	const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
 	return (
 		<div className='mt-4 flex flex-col'>
-			{label && (
-				<label htmlFor='email' className='block'>
-					{label} {isRequired && '*'}
-				</label>
-			)}
-			<input
-				id='email'
-				type={type}
-				disabled={disabled}
-				placeholder={placeholder}
-				className='mt-1 h-12 rounded-lg border-1 border-solid border-black p-3 focus:outline-none'
-				formNoValidate
-			/>
-			{error && (
-				<div className='mt-1 flex text-red-600'>
-					<img src={crossError} alt='error' />
-					<small className='ml-2 block'>{error}</small>
-				</div>
-			)}
+			<label htmlFor={label} className={cn('block', { hidden: !label })}>
+				{label} {isRequired && '*'}
+			</label>
+
+			<div className='relative'>
+				<img
+					src={isPasswordVisible ? visibilityOn : visibilityOff}
+					alt='password visibility'
+					onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+					className={cn('absolute top-0 bottom-0 right-0 my-auto cursor-pointer px-2', {
+						hidden: type !== 'password',
+					})}
+				/>
+				<input
+					id={label}
+					type={isPasswordVisible ? 'text' : type}
+					disabled={disabled}
+					required={isRequired}
+					placeholder={placeholder}
+					autoComplete='on'
+					formNoValidate
+					className={cn(
+						'mt-1 h-12 w-full rounded-lg border-1 border-solid border-black p-3 focus:outline-none',
+						{ 'border-red-600': error }
+					)}
+				/>
+			</div>
+
+			<div className={cn('mt-1 flex text-red-600', { hidden: !error })}>
+				<img src={crossError} alt='error' />
+				<small className='ml-2 block'>{error}</small>
+			</div>
 		</div>
 	);
 };

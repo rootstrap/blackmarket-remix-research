@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
+
 import { Button, InputField } from '~/common';
 import { Routes } from '~/types';
 import logo from '../../images/Logo.png';

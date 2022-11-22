@@ -589,6 +589,18 @@ video {
   left: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -614,6 +626,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mr-8 {
   margin-right: 2rem;
 }
@@ -622,12 +639,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -652,6 +669,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
@@ -690,6 +711,10 @@ video {
   --tw-border-spacing-x: 0.25rem;
   --tw-border-spacing-y: 0.25rem;
   border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-4 {
@@ -732,6 +757,11 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 3 26 / var(--tw-border-opacity));
+}
+
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(202 37 16 / var(--tw-border-opacity));
 }
 
 .bg-gray-50 {
@@ -831,6 +861,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -857,7 +892,7 @@ video {
   color: rgb(0 3 26 / var(--tw-text-opacity));
 }
 
-.text-link {
+.text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(7 108 224 / var(--tw-text-opacity));
 }
@@ -871,9 +906,70 @@ video {
   text-decoration-line: underline;
 }
 
+.outline {
+  outline-style: solid;
+}
+
+.hover\:border-none:hover {
+  border-style: none;
+}
+
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 108 188 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:outline-dashed:focus {
+  outline-style: dashed;
+}
+
+.focus\:outline-2:focus {
+  outline-width: 2px;
+}
+
+.focus\:outline-offset-2:focus {
+  outline-offset: 2px;
+}
+
+.focus\:outline-blue-600:focus {
+  outline-color: #0062d6;
+}
+
+.active\:bg-blue-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 74 150 / var(--tw-bg-opacity));
+}
+
+.active\:outline:active {
+  outline-style: solid;
+}
+
+.active\:outline-4:active {
+  outline-width: 4px;
+}
+
+.active\:outline-blue-50:active {
+  outline-color: #9EBBF3;
+}
+
+.disabled\:bg-gray-200:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
+}
+
+.disabled\:text-gray-700:disabled {
+  --tw-text-opacity: 1;
+  color: rgb(99 99 99 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {

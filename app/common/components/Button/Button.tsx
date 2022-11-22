@@ -2,13 +2,15 @@ import cn from 'classnames';
 
 interface ButtonProps {
 	label: string;
-	variant?: 'primary' | 'outline';
+	variant?: ButtonVariants;
 	fullWidth?: boolean;
 	onClick: () => void;
 	disabled?: boolean;
 }
 
-enum ButtonVariants {
+type ButtonVariants = 'primary' | 'outline';
+
+enum ButtonVariantsEnum {
 	PRIMARY = 'primary',
 	OUTLINE = 'outline',
 }
@@ -30,8 +32,8 @@ export const Button = ({
 				'focus:outline-dashed focus:outline-2 focus:outline-offset-2 focus:outline-blue-600',
 				'active:bg-blue-900 active:outline active:outline-4 active:outline-blue-50',
 				{ 'w-full': fullWidth },
-				{ 'bg-black p-3 text-white': variant === ButtonVariants.PRIMARY },
-				{ 'border-1 border-black bg-white text-black': variant === ButtonVariants.OUTLINE }
+				{ 'bg-black p-3 text-white': variant === ButtonVariantsEnum.PRIMARY },
+				{ 'border-1 border-black bg-white text-black': variant === ButtonVariantsEnum.OUTLINE }
 			)}
 			onClick={onClick}
 		>

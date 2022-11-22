@@ -21,7 +21,7 @@ const RegisterRoute = () => {
 				<InputField label='Full Name' placeholder='Type your email' type='email' />
 				<InputField label='Email' placeholder='Type your email' type='text' />
 				<InputField label='Password' placeholder='Type your password' type='password' />
-				<Button label='Sign up' variant='primary' fullWidth onClick={() => console.log('Signup')} />
+				<Button label='Sign up' fullWidth onClick={() => console.log('Signup')} />
 
 				<div className='mt-4 text-center'>
 					<p>

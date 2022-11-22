@@ -24,7 +24,7 @@ const LoginRoute = () => {
 				<form className='mt-5 w-full'>
 					<InputField label='Email' placeholder='Type your email' />
 					<InputField label='Password' placeholder='Type your password' type='password' />
-					<Button label='Log in' variant='primary' fullWidth onClick={() => {}} />
+					<Button label='Log in' fullWidth onClick={() => {}} />
 
 					{/* TODO: Define what to do with this button */}
 					<a href={Routes.HOME} className='mt-8 block text-center text-blue-500'>

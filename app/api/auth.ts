@@ -25,10 +25,10 @@ export const login = async (email: unknown, password: unknown) => {
 	let error: string | unknown;
 
 	error = validateEmail(email);
-	if (error) return { response: undefined, error };
+	if (error) return { error };
 
 	error = validatePassword(password);
-	if (error) return { response: undefined, error };
+	if (error) return { error };
 
 	try {
 		response = await httpClient.post<LoginResponse>('dj-rest-auth/login/', {

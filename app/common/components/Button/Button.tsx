@@ -3,12 +3,14 @@ import cn from 'classnames';
 interface ButtonProps {
 	label: string;
 	variant?: ButtonVariants;
+	type?: ButtonTypes;
 	fullWidth?: boolean;
-	onClick: () => void;
+	onClick?: () => void;
 	disabled?: boolean;
 }
 
 type ButtonVariants = 'primary' | 'outline';
+type ButtonTypes = 'button' | 'submit' | 'reset';
 
 enum ButtonVariantsEnum {
 	PRIMARY = 'primary',
@@ -17,6 +19,7 @@ enum ButtonVariantsEnum {
 
 export const Button = ({
 	label,
+	type = 'button',
 	variant = 'primary',
 	fullWidth = false,
 	disabled = false,
@@ -25,6 +28,7 @@ export const Button = ({
 	return (
 		<button
 			disabled={disabled}
+			type={type}
 			className={cn(
 				'mt-3 block rounded-lg p-3',
 				'disabled:bg-gray-200 disabled:text-gray-700',

@@ -6,6 +6,8 @@ import visibilityOff from '../../../icons/visibility_off.svg';
 import visibilityOn from '../../../icons/visibility_on.svg';
 
 export const InputField = ({
+	name,
+	defaultValue = '',
 	label = '',
 	placeholder = '',
 	isRequired = false,
@@ -36,6 +38,8 @@ export const InputField = ({
 					disabled={disabled}
 					required={isRequired}
 					placeholder={placeholder}
+					name={name}
+					defaultValue={defaultValue}
 					autoComplete='on'
 					formNoValidate
 					className={cn(
@@ -54,7 +58,9 @@ export const InputField = ({
 };
 
 interface InputFieldProps {
+	name: string;
 	label?: string;
+	defaultValue?: string;
 	placeholder?: string;
 	isRequired?: boolean;
 	disabled?: boolean;

@@ -1,5 +1,5 @@
-import { Outlet } from '@remix-run/react';
-import { MainLayout } from '~/layouts';
+import { Outlet } from "@remix-run/react";
+import { MainLayout } from "~/layouts";
 
 const Index = () => {
   return (

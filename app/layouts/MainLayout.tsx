@@ -5,8 +5,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     <div className="relative h-screen w-screen">
       <div className="w-full">
         <NavBar />
-        {children}
-        <div className="flex h-screen items-center">{`(( space ))`}</div>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </div>
     </div>

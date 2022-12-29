@@ -1,4 +1,4 @@
-import { NavBar } from '~/common';
+import { NavBar, Footer } from "~/common";
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
@@ -6,6 +6,8 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
       <div className="w-full">
         <NavBar />
         {children}
+        <div className="flex h-screen items-center">{`(( space ))`}</div>
+        <Footer />
       </div>
     </div>
   );

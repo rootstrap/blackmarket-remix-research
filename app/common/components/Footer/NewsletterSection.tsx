@@ -1,5 +1,5 @@
-import { InputField } from "../InputField/InputField";
-import { Button } from "../Button/Button";
+import { InputField } from '../InputField/InputField';
+import { Button } from '../Button/Button';
 
 export const NewsletterSection = () => {
   return (

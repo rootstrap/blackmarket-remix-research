@@ -1,6 +1,6 @@
-import { Routes } from "~/types";
-import { Button, SearchBar } from "~/common";
-import BlackmarketLogo from "~/images/blackmarket_logo.svg";
+import { Routes } from '~/types';
+import { Button, SearchBar } from '~/common';
+import BlackmarketLogo from '~/images/blackmarket_logo.svg';
 
 export const NavBar = () => {
   return (

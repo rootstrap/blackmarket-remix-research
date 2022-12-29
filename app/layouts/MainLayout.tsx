@@ -1,4 +1,4 @@
-import { NavBar, Footer } from "~/common";
+import { NavBar, Footer } from '~/common';
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (

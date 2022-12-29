@@ -1,6 +1,6 @@
-import { LinksSection } from "./LinksSection";
-import { LogosSection } from "./LogosSection";
-import { NewsletterSection } from "./NewsletterSection";
+import { LinksSection } from './LinksSection';
+import { LogosSection } from './LogosSection';
+import { NewsletterSection } from './NewsletterSection';
 
 export const Footer = () => {
   return (

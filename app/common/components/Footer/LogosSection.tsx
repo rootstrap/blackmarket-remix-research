@@ -1,9 +1,9 @@
-import { Routes } from "~/types";
-import BlackmarketLogo from "~/images/blackmarket_logo.svg";
-import InstagramIcon from "~/icons/instagram_icon.svg";
-import FacebookIcon from "~/icons/facebook_icon.svg";
-import TwitterIcon from "~/icons/twitter_icon.svg";
-import LinkedInIcon from "~/icons/linkedin_icon.svg";
+import { Routes } from '~/types';
+import BlackmarketLogo from '~/images/blackmarket_logo.svg';
+import InstagramIcon from '~/icons/instagram_icon.svg';
+import FacebookIcon from '~/icons/facebook_icon.svg';
+import TwitterIcon from '~/icons/twitter_icon.svg';
+import LinkedInIcon from '~/icons/linkedin_icon.svg';
 
 export const LogosSection = () => {
   return (

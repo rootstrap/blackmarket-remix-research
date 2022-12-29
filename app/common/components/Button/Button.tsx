@@ -1,7 +1,7 @@
 import cn from 'classnames';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string;
+  label: string | React.ReactNode;
   variant?: ButtonVariants;
   type?: ButtonTypes;
   fullWidth?: boolean;

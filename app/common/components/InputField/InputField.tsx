@@ -28,12 +28,9 @@ export const InputField = ({
           src={isPasswordVisible ? visibilityOn : visibilityOff}
           alt="password visibility"
           onClick={() => setIsPasswordVisible(!isPasswordVisible)}
-          className={cn(
-            'absolute top-0 bottom-0 right-0 my-auto cursor-pointer px-2',
-            {
-              hidden: type !== 'password',
-            }
-          )}
+          className={cn('absolute top-0 bottom-0 right-0 my-auto cursor-pointer px-2', {
+            hidden: type !== 'password',
+          })}
         />
         <input
           id={label}

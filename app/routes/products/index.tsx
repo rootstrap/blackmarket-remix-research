@@ -1,5 +1,5 @@
 const ProductsRoute = () => {
-	return <div>ProductsRoute</div>;
+  return <div>ProductsRoute</div>;
 };
 
 export default ProductsRoute;

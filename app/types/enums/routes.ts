@@ -1,6 +1,6 @@
 export enum Routes {
-	HOME = '/',
-	SIGNIN = '/login',
-	SIGNUP = '/register',
-	CONFIRMATION = '/confirmation',
+  HOME = '/',
+  SIGNIN = '/login',
+  SIGNUP = '/register',
+  CONFIRMATION = '/confirmation',
 }
